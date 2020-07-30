@@ -29,7 +29,7 @@ class About extends React.Component  {
               </a>
             </Col>
             <Col className="social-bar" xs={{span: 12}} md={{span: 6}}>
-              <a>
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/gabepetersen">
                 <GithubOutlined style={{
                   fontSize: '50px'
                 }} />
