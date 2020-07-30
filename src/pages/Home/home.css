@@ -1,3 +1,46 @@
 .tab-row {
-  padding: 10vh 5vh 10vh 5vh; 
+  padding: 6vh 5vh 6vh 5vh; 
+}
+
+.header-row {
+  height: 85vh;
+  padding: 10vh 0 20vh 0;
+}
+.down-arrow {
+  padding: 0 0 7vh 0;
+  color: #ffffff;
+}
+.down-arrow > span {
+  animation: blinkingText 4s infinite;
+}
+@keyframes blinkingText{
+  0%{     opacity: 1; top: 0;   }
+  50%{    opacity: 0.2; top: 2px;}
+  100%{   opacity: 1; top: 0; }
+}
+
+.header-container {
+  background-image: url("../../images/fog_lam_lake.jpg"); 
+  background-color: #bbbbbb;
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; 
+  margin: 0 0 4vh 0;
+}
+
+.about-container {
+  background-image: url("../../images/aspen_grove.jpg"); 
+  background-color: #bbbbbb;
+  background-position: 50% 70%; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; 
+  padding: 20vh 5vh 20vh 5vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .tab-row {
+    padding: 1vh 5vh 15vh 5vh;
+  }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Layout } from 'antd';
-import { Row, Col } from 'antd';
+import { Row, Col, Divider } from 'antd';
+import { DownOutlined } from '@ant-design/icons';
 
 import './home.css';
 
@@ -15,35 +15,46 @@ class Home extends React.Component {
   render() {
     return (
       <>
-        <Layout>
+          <div id="top" className="header-container">
+            <Row justify="end" align="middle">
+              <Col>
+                <NavBar />
+              </Col>
+            </Row>
+            
+            <Row className="header-row" justify="center" align="middle">
+              <Header />
+            </Row>
+            <Row className="down-arrow" justify="center" align="middle">
+              <DownOutlined style={{
+                  fontSize: '30px'
+                }}/>
+            </Row>
+          </div>
 
-          <Row justify="end" align="middle">
-            <Col>
-              <NavBar />
-            </Col>
-          </Row>
-          
-          <Row justify="space-around" align="middle">
-            <Header />
-          </Row>
-               
+          {/* Puts all the Tab Data (Work Experience) in Rows with unique justification */} 
+          <div id="works">
           {tabData.map((item, key) => {
             let or = 'start'
             if(item.justify === "right") {
               or = 'end';
             }
             return (
-              <Row justify={or} className="tab-row" align="middle">
-                <Tab key={key} data={item}/>
-              </Row>
+              <>
+                <Divider><h2>{item.title}</h2></Divider>
+                <Row key={key} justify={or} className="tab-row" align="middle">
+                  <Tab key={key} data={item}/>
+                </Row>
+              </>
             );
           })}
+          </div>
 
-          <Row justify="space-around" align="middle">
+          <div id="about">
+          <Row className="about-container" justify="center" align="middle">
             <About id="#about" />
           </Row>
-
-        </Layout>
+          </div>
       </>
     );
   }

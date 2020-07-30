@@ -3,3 +3,19 @@
   width: 100%;
   height: auto;
 }
+.about-text > p {
+  padding: 10px
+}
+.about-text {
+  background-color: #ffffff;
+}
+.social-bar > a {
+  padding: 0 5vh 0 5vh;
+  color: #ffffff;
+}
+.social-bar > a:hover {
+  color: #c1c5ff;
+}
+.social-bar {
+  padding: 5vh 0 5vh 0; 
+}

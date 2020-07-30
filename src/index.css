@@ -1,9 +1,15 @@
 /* Import Styling from Ant Design */
 @import '~antd/dist/antd.css';
 
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 body {
-  font: 14px "Century Gothic", Futura, sans-serif;
+  /* font: 14px "Century Gothic", Futura, sans-serif; */
+  font: 18px 'Crimson Text', serif;
+  color: #444444;
   text-align: center;
+  background-color: #fff;
 }
 
 ol, ul {
