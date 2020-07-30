@@ -4,6 +4,7 @@ import { Row, Col, Divider } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 import { BrowserRouter as Router } from "react-router-dom";
 import { HashLink as Link } from 'react-router-hash-link';
+import DocumentMeta from 'react-document-meta';
 
 // My styles
 import './home.css';
@@ -16,15 +17,23 @@ import tabData from '../../static/tabData';
 import NavBar from '../../components/Navbar/navbar';
 
 
-/* scroll={el => el.scrollIntoView({
-  behavior: 'smooth',
-})}
-
-*/
 class Home extends React.Component {
   render() {
+    // declare my meta tags
+    const meta = {
+    title: 'Gabe Petersen',
+      description: 'Portfolio website for Gabe Petersen',
+      meta: {
+        charset: 'utf-8',
+        name: {
+          keywords: 'Gabe Petersen,Gabe,Petersen,Portfolio,React,web development,front end'
+        }
+      }
+    };
+
     return (
       <>
+        <DocumentMeta {...meta}>
           <div id="top" className="header-container">
             {/* Navigation Bar in Here */}
             <Row justify="end" align="middle">
@@ -74,6 +83,7 @@ class Home extends React.Component {
             <About id="#about" />
           </Row>
           </div>
+        </DocumentMeta>
       </>
     );
   }
