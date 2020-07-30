@@ -10,7 +10,7 @@ class About extends React.Component  {
         <Col>
           <Row justify="center" align="middle">
             <Col span={24}>
-              <div className="about-text"><p>More to come soon. Feel free to reach out!</p></div>
+              <div className="about-text"><p>More to come soon! Feel free to contact me anytime.</p></div>
             </Col>
           </Row>
           <Row justify="center" align="middle">

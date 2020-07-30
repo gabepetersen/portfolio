@@ -11,7 +11,7 @@ class Header extends React.Component  {
           <img className="header-img" src={header_img} alt="header"></img>
         </Col>
         <Col xs={{span: 20}} md={{span: 8}}>
-          <div className="header-text"><p>You are currently in the Gabe zone. I do website stuff.</p></div>
+          <div className="header-text"><p>Welcome. I am Gabe Petersen. I do website stuff.</p></div>
         </Col>
       </>
     );

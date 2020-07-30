@@ -7,9 +7,9 @@ class Tab extends React.Component  {
   constructor(props) {
     super(props);
     if(this.props.data.justify === 'left') {
-      this.state = {imageA: 1, textA: 2, visible: false, bgImage: this.props.data.image};
+      this.state = {imageA: 1, textA: 2, visible: false, bgImage: this.props.data.image, tAlign: 'right'};
     } else {
-      this.state = {imageA: 2, textA: 1, visible: false, bgImage: this.props.data.image};
+      this.state = {imageA: 2, textA: 1, visible: false, bgImage: this.props.data.image, tAlign: 'left'};
     }
   }
 
@@ -23,7 +23,7 @@ class Tab extends React.Component  {
           </a>
         </Col>
         <Col xs={{span: 24, order: 1}} md={{span: 9, order: this.state.textA}}>
-          <p className="tab-text">{this.props.data.text}</p>
+          <p className="tab-text" style={{textAlign: this.state.tAlign}}>{this.props.data.text}</p>
         </Col>
       </>
     );
