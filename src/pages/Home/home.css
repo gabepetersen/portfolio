@@ -23,11 +23,13 @@
 }
 
 .header-container {
-  background-image: url("../../images/fog_lam_lake.png"); 
+  background-image: url("../../images/fog_lam_lake.jpg"); 
   background-color: #bbbbbb;
   background-position: center; 
   background-repeat: no-repeat;
   background-size: cover; 
+
+  background-attachment: fixed;
 
   -o-background-size: cover; 
   -moz-background-size: cover; 
@@ -37,15 +39,17 @@
 }
 
 .about-container {
-  background-image: url("../../images/aspen_grove.png"); 
+  background-image: url("../../images/aspen_grove.jpg"); 
   background-color: #bbbbbb;
   background-position: 50% 70%; 
   background-repeat: no-repeat;
   background-size: cover; 
 
-  -o-background-size:cover; 
-  -moz-background-size:cover; 
-  -webkit-background-size:cover; 
+  background-attachment: fixed;
+
+  -o-background-size: cover; 
+  -moz-background-size: cover; 
+  -webkit-background-size: cover; 
 
   padding: 20vh 5vh 20vh 5vh;
 }
@@ -54,13 +58,14 @@
   .tab-row {
     padding: 1vh 5vh 15vh 5vh;
   }
+  .header-row {
+    height: 80vh;
+  }
   /* Safari Mobile doesn't like fixed backgrounds :( */
-  /*
   .header-container {
     background-attachment: scroll;  
   }
   .about-container {
     background-attachment: scroll; 
   }
-  */
 }
