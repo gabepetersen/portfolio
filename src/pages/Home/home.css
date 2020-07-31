@@ -23,21 +23,21 @@
 }
 
 .header-container {
-  background-image: url("../../images/fog_lam_lake.jpg"); 
+  background-image: url("../../images/fog_lam_lake.png"); 
   background-color: #bbbbbb;
   background-position: center; 
   background-repeat: no-repeat;
   background-size: cover; 
 
-  -o-background-size:cover; 
-  -moz-background-size:cover; 
-  -webkit-background-size:cover; 
+  -o-background-size: cover; 
+  -moz-background-size: cover; 
+  -webkit-background-size: cover; 
 
   margin: 0 0 4vh 0;
 }
 
 .about-container {
-  background-image: url("../../images/aspen_grove.jpg"); 
+  background-image: url("../../images/aspen_grove.png"); 
   background-color: #bbbbbb;
   background-position: 50% 70%; 
   background-repeat: no-repeat;
