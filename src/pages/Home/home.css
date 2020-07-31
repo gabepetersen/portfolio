@@ -27,7 +27,6 @@
   background-color: #bbbbbb;
   background-position: center; 
   background-repeat: no-repeat;
-  background-attachment: scroll;
   background-size: cover; 
 
   -o-background-size:cover; 
@@ -42,7 +41,6 @@
   background-color: #bbbbbb;
   background-position: 50% 70%; 
   background-repeat: no-repeat;
-  background-attachment: scroll;
   background-size: cover; 
 
   -o-background-size:cover; 
@@ -57,10 +55,12 @@
     padding: 1vh 5vh 15vh 5vh;
   }
   /* Safari Mobile doesn't like fixed backgrounds :( */
+  /*
   .header-container {
     background-attachment: scroll;  
   }
   .about-container {
     background-attachment: scroll; 
   }
+  */
 }
