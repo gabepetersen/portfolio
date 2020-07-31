@@ -27,7 +27,7 @@
   background-color: #bbbbbb;
   background-position: center; 
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover; 
 
   -o-background-size:cover; 
@@ -42,7 +42,7 @@
   background-color: #bbbbbb;
   background-position: 50% 70%; 
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover; 
 
   -o-background-size:cover; 
